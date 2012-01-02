@@ -1,0 +1,32 @@
+FloatHead automatically causes a table heading to float at the top of the window once the user scrolls below its position.
+
+This is similar to Scott Buckingham's floaty head (https://github.com/scottbuckingham/jquery.floatyHead), but was developed independently. (Not invented here syndrome :P)
+
+Example usage:
+
+<table id="foobar">
+	<thead>
+		<tr>
+			<th>Some</th>
+			<th>Example</th>
+			<th>Headings</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>This is</td>
+			<td>Example</td>
+			<td>Data</td>
+		</tr>
+		<tr>
+			<td>This is</td>
+			<td>Example</td>
+			<td>Data</td>
+		</tr>
+	</tbody>
+</table>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$('#foobar').floatHead();
+</script>
